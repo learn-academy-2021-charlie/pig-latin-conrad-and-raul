@@ -54,9 +54,6 @@ class App extends Component{
         }
       }
 
-      // eenquay: een + qu + ay
-      // een + qu + pigLatinConsonants
-
       // through -> oughthray
       for (let i = 0; i < currentWord.length; i++) {
         if (currentWord.charAt(i) === "a" || currentWord.charAt(i) === "e" || currentWord.charAt(i) === "i" || currentWord.charAt(i) === "o" || currentWord.charAt(i) === "u") {
@@ -73,12 +70,6 @@ class App extends Component{
           if (currentWord.charAt(i) === "y") {
             let afterVowel2 = currentWord.slice(0, i)
             return "y" + afterVowel2 + pigLatinConsonants
-            }
-          }
-          /// working on Question
-          for (let i=0; i<currentWord.length;i++){
-            let questionMark = (currentWord.charAt(i) === "." || currentWord.charAt(i) === "?" || currentWord.charAt(i) === "!"){
-              return currentWord + questionMark
             }
           }
       // Remember: console.log is your friend :)
