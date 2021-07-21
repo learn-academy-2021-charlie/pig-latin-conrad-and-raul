@@ -43,24 +43,29 @@ class App extends Component{
         return currentWord + pigLatin
       } 
       
-
-      for (let i = 0; i < currentWord.length; i++) {
-        if (currentWord.charAt(i) === "q") {
-          let qu = currentWord.charAt(i) + currentWord.charAt(i+1)
-          console.log(qu)
-        }
-      }
+// queen 
+//.slice
+      // for (let i = 0; i < currentWord.length; i++) {
+      //   if (currentWord.charAt(i) === "q") {
+      //     let qu = currentWord.charAt(i) + currentWord.charAt(i+1)
+      //     return qu + pigLatinConsonants
+      //   }
+      // }
 
       // eenquay: een + qu + ay
       // een + qu + pigLatinConsonants
 
 
       for (let i = 0; i < currentWord.length; i++) {
-        if (currentWord.charAt(i) === "a" || currentWord.charAt(i) === "e" || currentWord.charAt(i) === "i" || currentWord.charAt(i) === "o" || currentWord.charAt(i) === "u" || currentWord.charAt(i) === "y") {
+        if (currentWord.charAt(i) === "a" || currentWord.charAt(i) === "e" || currentWord.charAt(i) === "i" || currentWord.charAt(i) === "o" || currentWord.charAt(i) === "u") {
           return currentWord.charAt(i) + currentWord.substring(i+1) + currentWord.slice(0, i) + pigLatinConsonants
           }
         }
-
+        for (let i = 0; i < currentWord.length; i++) {
+          if (currentWord.charAt(i) === "y") {
+            return currentWord.substring(i+1) + currentWord.slice(0, i) + pigLatinConsonants
+            }
+          }
 
       // Remember: console.log is your friend :)
 
