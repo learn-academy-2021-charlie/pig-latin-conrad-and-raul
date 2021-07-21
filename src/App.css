@@ -2,10 +2,20 @@ body {
   margin: 1rem;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
+  background-image: url(https://cdn.pixabay.com/photo/2021/03/30/07/32/pig-6136139_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
 }
 
 h1 {
   font-size: 4rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: rgba(245, 212, 212, 0.911);
+  border-radius: 1.5rem;
+  padding: 1rem;
+
 }
 
 button {
@@ -16,6 +26,13 @@ button {
 
 footer {
   padding: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  background-color: orange;
+  border-radius: 1.5rem;
+  width: 300px;
+  margin: auto;
+  color: white;
 }
 
 .butcherPig {
@@ -24,17 +41,19 @@ footer {
 
 .userInput {
   border-radius: .5rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   height: 5rem;
   width: 20rem;
   text-align: center;
 }
 
 .inputArea {
-  background-color: #606060;
+  background-color: orange;
   color: #fff;
   border-radius: .5rem;
   padding: 1rem;
+  width: 500px;
+  margin: auto;
 }
 
 @media only screen and (max-width: 650px) {
@@ -48,4 +67,16 @@ footer {
     padding: 1rem;
     text-align: center;
   }
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  background-color: rgba(245, 212, 212, 0.911);
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+h4 {
+  font-size: 2rem;
 }

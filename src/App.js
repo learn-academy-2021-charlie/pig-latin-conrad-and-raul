@@ -63,7 +63,7 @@ class App extends Component{
           let firstVowel = currentWord.charAt(i)
           let afterVowel = currentWord.substring(i+1)
           let beforeVowel = currentWord.slice(0, i)
-          let newWord = firstVowel + afterVowel + beforeVowel + pigLatinConsonants
+          var newWord = firstVowel + afterVowel + beforeVowel + pigLatinConsonants
           return newWord
           }
         }
@@ -75,7 +75,12 @@ class App extends Component{
             return "y" + afterVowel2 + pigLatinConsonants
             }
           }
-
+          /// working on Question
+          for (let i=0; i<currentWord.length;i++){
+            let questionMark = (currentWord.charAt(i) === "." || currentWord.charAt(i) === "?" || currentWord.charAt(i) === "!"){
+              return currentWord + questionMark
+            }
+          }
       // Remember: console.log is your friend :)
 
 
@@ -120,11 +125,11 @@ class App extends Component{
     return(
       <>
         <h1>Pig Latin Translator</h1>
-        <img
+        {/* <img
           src={butcherPig}
           alt="pig with butcher cut names in pig latin"
           className="butcherPig"
-        />
+        /> */}
         <div className="inputArea">
           <h4>Enter phrase to be translated:</h4>
           {/* user input field - every DOM event that happens in the input will call the handleChange method and update state */}
